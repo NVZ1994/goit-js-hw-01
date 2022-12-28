@@ -16,26 +16,6 @@ const images = [
 
 const ul = document.querySelector('.gallery');
 
-function galleryCreation() {
+const galleryItem = images.map(item => `<li><img src='${item.url}' alt='${item.alt}' width='300' heigth='200'></img></li>`);
 
-  images.forEach(element => {
-
-    const li = document.createElement('li');
-    const image = document.createElement('img');
-    image.src = element.url;
-    image.alt = element.alt;
-    image.width = 320;
-    image.style.displayBlock;
-    
-    li.appendChild(image)
-    
-    ul.append(li)
-  })
-
-}
-
-galleryCreation(images)
-
-
-
-
+ul.insertAdjacentHTML('beforeend', galleryItem.join(' '));
