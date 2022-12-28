@@ -8,7 +8,6 @@ const ingredients = [
 ];
 
 const ul = document.getElementById('ingredients');
-console.log(ul)
 
 ingredients.forEach(element => {
   const item = document.createElement('li');
