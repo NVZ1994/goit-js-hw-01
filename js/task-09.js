@@ -12,4 +12,5 @@ function colorChanger() {
   const randomizer = getRandomHexColor()
   body.style.backgroundColor = randomizer;
   span.textContent = randomizer
+  console.log(randomizer)
 }
