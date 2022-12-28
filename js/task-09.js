@@ -10,6 +10,6 @@ btn.addEventListener('click', colorChanger)
 function colorChanger() {
   const body = document.body;
   const randomizer = getRandomHexColor()
-  body.style.backgroundColor = randomizer
+  body.style.backgroundColor = randomizer;
   span.textContent = randomizer
 }
