@@ -1,5 +1,3 @@
-// 1
-
 const categories = document.querySelectorAll('.item')
 
 console.log('Number of categories:', categories.length)
@@ -11,5 +9,4 @@ categories.forEach((item) => {
     console.log('Elements ', elements);
 })
 
-// 2
 
